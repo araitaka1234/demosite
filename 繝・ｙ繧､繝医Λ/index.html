@@ -11,29 +11,46 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>模写するぞ</title>
+    <style>
+        #top {
+            width: 500px;
+        }
+
+        body {
+            font-family: 'ＭＳ Ｐゴシック', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">30DAYSトライアル</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="col-4 d-flex justify-content-center">
+            <a class="navbar-brand" href="#">30DAYSトライアル</a>
+        </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">デイトラとは <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">コース一覧</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">お問合せ</a>
-                </li>
-            </ul>
+
+        <div class="offset-2 col-6">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="top" class="navbar-nav mr-0 d-flex justify-content-between">
+
+                    <li class="nav-item col-4">
+                        <a class="nav-link" href="#about">
+                            デイトラとは <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item col-4">
+                        <a class="nav-link" href="#index">
+                            コース一覧</a>
+                    </li>
+                    <li class="nav-item col-4">
+                        <a class="nav-link" href="#form">
+                            お問合せ</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -43,56 +60,81 @@
 
     <div class="d-flex justify-content-center">
         <div class="row">
-            <div>デイトラとは</div>
+            <h3 class="mb-4 bold" id="about"><br>デイトラとは</h3>
         </div>
     </div>
-    <div class="row">
-        <div class="col-6">
-            <img src="./img/about.png" style="width:50%;" alt="about.png">
-        </div>
-        <div class="col-6">
-            <div>
-                デイトラとは、無料で・迷わず・楽しく学べるプログラミング学習アプリです。毎日設定された課題をこなしていくだけで、未経験から30日でプログラミングスキルが身につきます。1日1題30日でプロのWebエンジニアを目指しましょう！
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="./img/about.png" style="width:100%;" alt="about.png">
+            </div>
+            <div class="col-6">
+                <div>
+                    デイトラとは、無料で・迷わず・楽しく学べるプログラミング学習アプリです。毎日設定された課題をこなしていくだけで、未経験から30日でプログラミングスキルが身につきます。
+                    <br>
+                    1日1題30日でプロのWebエンジニアを目指しましょう！
+                </div>
             </div>
         </div>
     </div>
     <div class="d-flex justify-content-center">
         <div class="row">
-            <div>コース一覧</div>
-        </div>
-
-        <div class="card-deck">
-            <div class="card">
-                <img src="./img/web_first.png" class="card-img-top" alt="first">
-                <div>
-                    <h5 class="card-title">HTML/CSS/BOOTSTRAP</h5>
-                </div>
-
-            </div>
-            <div class="card">
-                <img src="./img/web_second.png" class="card-img-top" alt="second">
-                <div>
-                    <h5 class="card-title">Card title</h5>
-
-                </div>
-
-            </div>
-            <div class="card">
-                <img src="./img/web_third.png" class="card-img-top" alt="third">
-                <div>
-                    <h5 class="card-title">Card title</h5>
-
-                </div>
-
-            </div>
-        </div>
-        <div class="row">
-            <div>お問合せ</div>
+            <h3 class="mt-5 bold" id="index">コース一覧</h3>
         </div>
     </div>
+    <div class="card-deck">
+        <div class="card">
+            <img src="./img/web_first.png" class="card-img-top" alt="first">
+            <div>
+                <h5 class="card-title">HTML / CSS / Bootstrap</h5>
+            </div>
 
+        </div>
+        <div class="card">
+            <img src="./img/web_second.png" class="card-img-top" alt="second">
+            <div>
+                <h5 class="card-title">HTML / CSS / Javascript / jQuery</h5>
 
-    <h1>Hello, world!</h1>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./img/web_third.png" class="card-img-top" alt="third">
+            <div>
+                <h5 class="card-title">PHP / WordPress</h5>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="row">
+            <h3 class="mt-5 bold" id="form">お問合せ</h3>
+        </div>
+    </div>
+    <form>
+        <div class="form-group">
+            <div class="d-flex justify-content-center">
+                <label for="formGroupExampleInput">さあ今日から30日間を始めよう！</label>
+            </div>
+            <div class="d-flex justify-content-center">
+                <input type="text" style="width:40%;" class="form-control" id="formGroupExampleInput"
+                    placeholder="メールアドレス">
+            </div>
+        </div>
+    </form>
+
+    <div class="d-flex justify-content-center">
+        <button type="button" style="height: 70px; width: 400px;" class="btn btn-danger">無料で始める</button>
+    </div>
+
+    <div class="container mt-5">
+        <hr>
+        <div class="d-flex justify-content-end">
+            Copyright(C) 2020 東京フリーランス ALL Rights Reserved.
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
